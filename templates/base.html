@@ -1,0 +1,40 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FoodOnline</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'css/registerUser.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+	<style>
+		body, p{
+			font:Normal sans-serif;
+			color: #515151 ;
+		}
+	</style>
+</head>
+
+<body>
+    <!-- LOAD NAVBAR HERE-->
+    {% include 'includes/navbar.html'%}
+
+    <!-- LOAD CONTENT HERE-->
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- LOAD FOOTER HERE -->
+    {% include 'includes/footer.html'%}
+
+
+
+
+
